@@ -7,31 +7,31 @@ const highlightMenu = () => {
 
   let scrollPos = window.scrollY;
 
-    if(window.innerWidth > 960 && scrollPos < 600){
-      homeMenu.classList.add('highlight');
-      membersMenu.classList.remove('highlight');
-      extraMenu.classList.remove('highlight');
-      return;
-    }
-    else if(window.innerWidth > 960 && scrollPos < 1400){
-      membersMenu.classList.add('highlight');
-      homeMenu.classList.remove('highlight');
-      discographyMenu.classList.remove('highlight');
-      extraMenu.classList.remove('highlight');
-      return;
-    }
-    else if(window.innerWidth > 960 && scrollPos < 3000){
-      discographyMenu.classList.add('highlight');
-      membersMenu.classList.remove('highlight');
-      extraMenu.classList.remove('highlight');
-      return;
-    }
-    else if(window.innerWidth > 960 && scrollPos > 3000){
-      discographyMenu.classList.remove('highlight');
-      membersMenu.classList.remove('highlight');
-      extraMenu.classList.add('highlight');
-      return;
-    }
+  if(window.innerWidth > 960 && scrollPos < 600){
+    homeMenu.classList.add('highlight');
+    membersMenu.classList.remove('highlight');
+    extraMenu.classList.remove('highlight');
+    return;
+  }
+  else if(window.innerWidth > 960 && scrollPos < 1400){
+    membersMenu.classList.add('highlight');
+    homeMenu.classList.remove('highlight');
+    discographyMenu.classList.remove('highlight');
+    extraMenu.classList.remove('highlight');
+    return;
+  }
+  else if(window.innerWidth > 960 && scrollPos < 3000){
+    discographyMenu.classList.add('highlight');
+    membersMenu.classList.remove('highlight');
+    extraMenu.classList.remove('highlight');
+    return;
+  }
+  else if(window.innerWidth > 960 && scrollPos > 3000){
+    discographyMenu.classList.remove('highlight');
+    membersMenu.classList.remove('highlight');
+    extraMenu.classList.add('highlight');
+    return;
+  }
 
   if((elem && window.window.innerWidth > 960 && scrollPos < 600 || elem)){
     elem.classList.remove('highlight');
