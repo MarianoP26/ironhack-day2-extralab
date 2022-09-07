@@ -20,13 +20,13 @@ const highlightMenu = () => {
       extraMenu.classList.remove('highlight');
       return;
     }
-    else if(window.innerWidth > 960 && scrollPos < 2345){
+    else if(window.innerWidth > 960 && scrollPos < 3000){
       discographyMenu.classList.add('highlight');
       membersMenu.classList.remove('highlight');
       extraMenu.classList.remove('highlight');
       return;
     }
-    else if(window.innerWidth > 960 && scrollPos > 2345){
+    else if(window.innerWidth > 960 && scrollPos > 3000){
       discographyMenu.classList.remove('highlight');
       membersMenu.classList.remove('highlight');
       extraMenu.classList.add('highlight');
